@@ -32,7 +32,7 @@ const Board = mongoose.model("Board");
 const Room = mongoose.model("Room");
 //MongoDb Connection ends
 
-const server = app.listen(3001, () => {
+const server = app.listen(process.env.PORT || 3001, () => {
   console.log("Server started on port 3001");
 });
 

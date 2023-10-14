@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "start": "node server.js",
+    "build": "netlify deploy --prod"
   },
   "author": "Amit",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "express": "^4.18.2",
     "js-sha256": "^0.10.1",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
     "mongoose": "^7.5.3",
     "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"
